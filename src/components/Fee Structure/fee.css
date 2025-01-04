@@ -1,0 +1,170 @@
+/* Main Pricing Section */
+.pricing-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 60px 40px;
+  background-color: #f4f6f9;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Section Title */
+.pricing-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+/* Pricing Container */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap; /* allows items to wrap */
+  justify-content: space-between; /* space between items */
+  gap: 20px; /* spacing between cards */
+}
+
+/* Single Pricing Plan */
+.pricing-plan {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  border-radius: 12px;
+  padding: 35px;
+  width: calc(33.33% - 20px); /* 3 cards per row on larger screens */
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+/* Hover Effect for Pricing Plans */
+.pricing-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Plan Title */
+.pricing-plan h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Pricing Plan Price */
+.pricing-plan .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Features List */
+.pricing-plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.pricing-plan li {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-plan li::before {
+  content: "✔";
+  color: #ffd700; /* Gold checkmark */
+  margin-right: 10px;
+}
+
+/* Button */
+.pricing-plan button {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff4500; /* Orange button */
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.pricing-plan button:hover {
+  background-color: #e03e00; /* Darker orange on hover */
+}
+
+/* Responsive Styles */
+
+/* For larger laptops or desktops, 3 cards per row */
+@media (min-width: 1024px) {
+  .pricing-container {
+    flex-direction: row; /* Ensure row direction for laptops/desktops */
+  }
+
+  .pricing-plan {
+    width: calc(33.33% - 20px); /* 3 cards per row with proper spacing */
+  }
+}
+
+/* For tablets (max-width: 1024px), 2 cards per row */
+@media (max-width: 1024px) {
+  .pricing-container {
+    flex-direction: row; /* Ensure row direction for medium screens */
+  }
+
+  .pricing-plan {
+    width: calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+/* For smaller devices (max-width: 768px), single column layout */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column; /* Switch to column layout */
+    align-items: center;
+  }
+
+  .pricing-plan {
+    width: 100%; /* One column */
+    margin-bottom: 30px;
+  }
+
+  .pricing-plan h3 {
+    font-size: 1.6rem;
+  }
+
+  .pricing-plan .price {
+    font-size: 2rem;
+  }
+
+  .pricing-plan li {
+    font-size: 1rem;
+  }
+}
+
+/* For very small devices (max-width: 480px), adjust text size */
+@media (max-width: 480px) {
+  .pricing-plan h3 {
+    font-size: 1.4rem;
+  }
+
+  .pricing-plan .price {
+    font-size: 1.8rem;
+  }
+
+  .pricing-plan li {
+    font-size: 0.95rem;
+  }
+
+  .pricing-plan button {
+    font-size: 1rem;
+  }
+}

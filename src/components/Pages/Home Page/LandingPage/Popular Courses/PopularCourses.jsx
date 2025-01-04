@@ -4,63 +4,80 @@ const PopularCourses = () => {
   const courses = [
     {
       id: 1,
-      imgSrc: "img/cat-1.jpg",
-      price: "$149.00",
+      imgSrc: "img/cat-1.jpg", // Replace with actual image source
+      price: "Free", // Price can be updated according to your pricing structure
       rating: 5,
-      courseName: "Quran Memorization for Beginners",
+      courseName: "Quran Reading (Nazra Quran)",
       instructor: "Ustadh Ali",
-      duration: "10 Weeks",
+      duration: "Flexible",
       students: "150 Students",
+      link: "/quran-reading", // Link for 'Read More'
     },
     {
       id: 2,
-      imgSrc: "img/cat-1.jpg",
-      price: "$129.00",
+      imgSrc: "img/cat-2.jpg", // Replace with actual image source
+      price: "Free", // Update price as needed
       rating: 5,
-      courseName: "Tafseer of Surah Al-Fatiha",
+      courseName: "Tajweed (Quranic Pronunciation)",
       instructor: "Ustadh Sarah",
-      duration: "6 Weeks",
+      duration: "Flexible",
       students: "120 Students",
+      link: "/tajweed", // Link for 'Read More'
     },
     {
       id: 3,
-      imgSrc: "img/cat-1.jpg",
-      price: "$99.00",
+      imgSrc: "img/cat-3.jpg", // Replace with actual image source
+      price: "Free", // Update price as needed
       rating: 4,
-      courseName: "Introduction to Quranic Arabic",
+      courseName: "Quran Translation (Tafseer)",
       instructor: "Ustadh Omar",
-      duration: "8 Weeks",
+      duration: "Flexible",
       students: "200 Students",
+      link: "/quran-translation", // Link for 'Read More'
     },
     {
       id: 4,
-      imgSrc: "img/cat-1.jpg",
-      price: "$159.00",
+      imgSrc: "img/cat-4.jpg", // Replace with actual image source
+      price: "Free", // Update price as needed
       rating: 4,
-      courseName: "Quran Translation and Tafseer",
+      courseName: "Quran Memorization (Hifz Quran)",
       instructor: "Ustadh Ahmad",
-      duration: "12 Weeks",
+      duration: "Flexible",
       students: "180 Students",
+      link: "/memorization", // Link for 'Read More'
     },
     {
       id: 5,
-      imgSrc: "img/cat-1.jpg",
-      price: "$179.00",
+      imgSrc: "img/cat-5.jpg", // Replace with actual image source
+      price: "Free", // Update price as needed
       rating: 5,
-      courseName: "Advanced Tafseer Studies",
+      courseName: "Islamic Studies (Deeniyaat)",
       instructor: "Dr. Zainab",
-      duration: "14 Weeks",
+      duration: "Flexible",
       students: "80 Students",
+      link: "/islamic-studies", // Link for 'Read More'
     },
     {
       id: 6,
-      imgSrc: "img/cat-1.jpg",
-      price: "$199.00",
+      imgSrc: "img/cat-6.png", // Replace with actual image source
+      price: "Free", // Update price as needed
       rating: 5,
-      courseName: "Hifz-e-Quran",
+      courseName: "Shariah Rules (Ahkaam Shariah)",
       instructor: "Ustadh Fatima",
-      duration: "Variable",
+      duration: "Flexible",
       students: "60 Students",
+      link: "/islamic-rules", // Link for 'Read More'
+    },
+    {
+      id: 7,
+      imgSrc: "img/cat-7.jpg", // Replace with actual image source
+      price: "Free", // Update price as needed
+      rating: 5,
+      courseName: "Islamic Ethics (Akhlaaq)",
+      instructor: "Ustadh Ali",
+      duration: "Flexible",
+      students: "100 Students",
+      link: "/islamic-ethics", // Link for 'Read More'
     },
   ];
 
@@ -89,14 +106,14 @@ const PopularCourses = () => {
                   />
                   <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                     <a
-                      href="/course-details"
+                      href={course.link} // Dynamic 'Read More' link
                       className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
                       style={{ borderRadius: "30px 0 0 30px" }}
                     >
                       Read More
                     </a>
                     <a
-                      href="/join-course"
+                      href={`/join-course/${course.id}`} // Dynamic course join link
                       className="flex-shrink-0 btn btn-sm btn-primary px-3"
                       style={{ borderRadius: "0 30px 30px 0" }}
                     >
@@ -119,12 +136,8 @@ const PopularCourses = () => {
                 </div>
                 <div className="d-flex border-top">
                   <small className="flex-fill text-center border-end py-2">
-                    <i className="fa fa-user-tie text-primary me-2"></i>
-                    {course.instructor}
-                  </small>
-                  <small className="flex-fill text-center border-end py-2">
                     <i className="fa fa-clock text-primary me-2"></i>
-                    {course.duration}
+                    Duration: {course.duration}
                   </small>
                   <small className="flex-fill text-center py-2">
                     <i className="fa fa-user text-primary me-2"></i>

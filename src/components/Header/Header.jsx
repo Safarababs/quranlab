@@ -9,7 +9,7 @@ const Header = () => {
           className="navbar-brand d-flex align-items-center px-4 px-lg-5"
         >
           <h2 className="m-0 text-primary">
-            <i className="fa fa-book me-3"></i> Quran Lab Online
+            <i className="fa fa-book me-3"></i> Online Quran Lab
           </h2>
         </a>
         <button
@@ -27,25 +27,6 @@ const Header = () => {
               Home
             </a>
 
-            {/* Dropdown for General Information */}
-            <div className="nav-item dropdown">
-              <a
-                href="/"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Information
-              </a>
-              <div className="dropdown-menu fade-down m-0">
-                <a href="/about" className="dropdown-item">
-                  About
-                </a>
-                <a href="/contact" className="dropdown-item">
-                  Contact
-                </a>
-              </div>
-            </div>
-
             {/* Dropdown for Quran & Islamic Studies */}
             <div className="nav-item dropdown">
               <a
@@ -53,32 +34,89 @@ const Header = () => {
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                Quran & Studies
+                Courses
               </a>
               <div className="dropdown-menu fade-down m-0">
-                <a href="/quran-teaching" className="dropdown-item">
-                  Quran Teaching
+                <a href="/courses" className="dropdown-item">
+                  All Courses
                 </a>
-                <a href="/religious-services" className="dropdown-item">
-                  Religious Services
+                <a href="/quran-reading" className="dropdown-item">
+                  Quran Reading (Nazra Quran)
                 </a>
-                <a href="/quran-studio" className="dropdown-item">
-                  Quran Studio
+                <a href="/tajweed" className="dropdown-item">
+                  Tajweed (Quranic Pronunciation)
                 </a>
-                <a href="/islamic-library" className="dropdown-item">
-                  Islamic Library
+                <a href="/quran-translation" className="dropdown-item">
+                  Quran Translation (Tafseer)
+                </a>
+                <a href="/memorization" className="dropdown-item">
+                  Quran Memorization (Hifz Quran)
+                </a>
+                <a href="/islamic-studies" className="dropdown-item">
+                  Islamic Studies (Deeniyaat)
+                </a>
+                <a href="/islamic-rules" className="dropdown-item">
+                  Shariah Rules (Ahkaam Shariah)
+                </a>
+                <a href="/islamic-ethics" className="dropdown-item">
+                  Islamic Ethics (Akhlaaq)
                 </a>
               </div>
             </div>
-
-            {/* Dropdown for Additional Services */}
+            {/* relihous services */}
             <div className="nav-item dropdown">
               <a
                 href="/"
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                Services
+                Religious Services
+              </a>
+              <div className="dropdown-menu fade-down m-0">
+                <a href="/religious-1" className="dropdown-item">
+                  Academic Teacher for Schools & Colleges
+                </a>
+                <a href="/religious-2" className="dropdown-item">
+                  Mafatih al-Jinan Recording
+                </a>
+                <a href="/religious-3" className="dropdown-item">
+                  Majlis-e-Tarheem
+                </a>
+                <a href="/religious-4" className="dropdown-item">
+                  Nahjul Balagha Recording
+                </a>
+                <a href="/religious-5" className="dropdown-item">
+                  Online Nikkah
+                </a>
+                <a href="/religious-7" className="dropdown-item">
+                  Qaza Namaz (Missed Prayers)
+                </a>
+                <a href="/religious-8" className="dropdown-item">
+                  Qaza Roza (Missed Fasts)
+                </a>
+                <a href="/religious-9" className="dropdown-item">
+                  Question Answer Section
+                </a>
+                <a href="/religious-10" className="dropdown-item">
+                  Quran Recitation for Deceased Loved Ones
+                </a>
+                <a href="/religious-11" className="dropdown-item">
+                  Quran Recording (Arabic, Urdu, English)
+                </a>
+                <a href="/religious-12" className="dropdown-item">
+                  Sahifa Sajjadia Recording
+                </a>
+              </div>
+            </div>
+
+            {/* Dropdown for Projects */}
+            <div className="nav-item dropdown">
+              <a
+                href="/"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                Projects
               </a>
               <div className="dropdown-menu fade-down m-0">
                 <a href="/educational-fund" className="dropdown-item">
@@ -103,9 +141,21 @@ const Header = () => {
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                Team & More
+                More
               </a>
               <div className="dropdown-menu fade-down m-0">
+                <a href="/about" className="dropdown-item">
+                  About Us
+                </a>
+                <a href="/contact" className="dropdown-item">
+                  Contact Us
+                </a>
+                <a href="/fee" className="dropdown-item">
+                  Fee Structure
+                </a>
+                <a href="/courses" className="dropdown-item">
+                  Courses
+                </a>
                 <a href="/our-team" className="dropdown-item">
                   Our Team
                 </a>
@@ -121,7 +171,7 @@ const Header = () => {
 
           {/* Join Now Button */}
           <a
-            href="/join"
+            href="/contact"
             className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
           >
             Join Now<i className="fa fa-arrow-right ms-3"></i>

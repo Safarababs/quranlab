@@ -3,7 +3,6 @@ import {
   FaTwitter,
   FaFacebookF,
   FaYoutube,
-  FaLinkedinIn,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
@@ -20,19 +19,19 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-3">Quick Links</h4>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/about">
               About Us
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/contact">
               Contact Us
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/policy">
               Privacy Policy
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/terms">
               Terms & Conditions
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/faq">
               FAQs & Help
             </a>
           </div>
@@ -56,14 +55,14 @@ const Footer = () => {
               <a className="btn btn-outline-light btn-social" href="/">
                 <FaTwitter />
               </a>
-              <a className="btn btn-outline-light btn-social" href="/">
+              <a
+                className="btn btn-outline-light btn-social"
+                href="http://www.youtube.com/@almasonlinequran"
+              >
                 <FaFacebookF />
               </a>
               <a className="btn btn-outline-light btn-social" href="/">
                 <FaYoutube />
-              </a>
-              <a className="btn btn-outline-light btn-social" href="/">
-                <FaLinkedinIn />
               </a>
             </div>
           </div>
@@ -75,43 +74,43 @@ const Footer = () => {
               <div className="col-4">
                 <img
                   className="img-fluid bg-light p-1"
-                  src="img/course-2.jpg"
-                  alt="Course 1"
+                  src="img/cat-1.jpg"
+                  alt="cat 1"
                 />
               </div>
               <div className="col-4">
                 <img
                   className="img-fluid bg-light p-1"
-                  src="img/course-3.jpg"
-                  alt="Course 2"
+                  src="img/cat-2.jpg"
+                  alt="cat 2"
                 />
               </div>
               <div className="col-4">
                 <img
                   className="img-fluid bg-light p-1"
-                  src="img/course-2.jpg"
-                  alt="Course 3"
+                  src="img/cat-3.jpg"
+                  alt="cat 3"
                 />
               </div>
               <div className="col-4">
                 <img
                   className="img-fluid bg-light p-1"
-                  src="img/course-2.jpg"
-                  alt="Course 4"
+                  src="img/cat-4.jpg"
+                  alt="cat 4"
                 />
               </div>
               <div className="col-4">
                 <img
                   className="img-fluid bg-light p-1"
-                  src="img/course-3.jpg"
-                  alt="Course 5"
+                  src="img/cat-4.jpg"
+                  alt="cat 5"
                 />
               </div>
               <div className="col-4">
                 <img
                   className="img-fluid bg-light p-1"
-                  src="img/course-2.jpg"
-                  alt="Course 6"
+                  src="img/cat-4.jpg"
+                  alt="cat 6"
                 />
               </div>
             </div>
