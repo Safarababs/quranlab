@@ -22,6 +22,7 @@ const OurCourses = () => {
           <h6 className="section-title bg-white text-center text-primary px-3">
             Courses
           </h6>
+          <h2 className="mb-4">What we offer?</h2>
         </div>
         <p>
           We offer a wide range of online courses designed to help you gain a

@@ -122,7 +122,7 @@ const PopularCourses = () => {
                   </div>
                 </div>
                 <div className="text-center p-4 pb-0">
-                  <h3 className="mb-0">{course.price}</h3>
+                  <h5 className="mb-4">{course.courseName}</h5>
                   <div className="mb-3">
                     {[...Array(course.rating)].map((_, index) => (
                       <small
@@ -132,7 +132,6 @@ const PopularCourses = () => {
                     ))}
                     <small>({course.rating * 24})</small>
                   </div>
-                  <h5 className="mb-4">{course.courseName}</h5>
                 </div>
                 <div className="d-flex border-top">
                   <small className="flex-fill text-center border-end py-2">

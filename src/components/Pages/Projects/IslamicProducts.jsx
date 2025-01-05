@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PageHeader from "../../Pages Header/PageHeader";
 import Contact from "../../Contact/Contact";
 import PopularCourses from "../Home Page/LandingPage/Popular Courses/PopularCourses";
+import "./IslamicProducts.css"; // Custom CSS for styling the cart
 
 const IslamicProducts = () => {
   const [cart, setCart] = useState([]);
@@ -65,9 +66,9 @@ const IslamicProducts = () => {
       id: 7,
       name: "Aehram (Pilgrimage Garment)",
       description:
-        "A lightweight, comfortable Aehram set designed for pilgrims, ensuring comfort and modesty during Hajj or Umrah.",
+        "A lightweight, comfortable Aehram set designed for pilgrims, ensuring comfort and modesty during Hajj or Umrah. You can order for custom design",
       price: 75,
-      imageUrl: "./img/aehram.jpg", // Use the correct image URL
+      imageUrl: "./img/aehram.jpg",
     },
     {
       id: 8,
@@ -75,30 +76,59 @@ const IslamicProducts = () => {
       description:
         "A traditional, elegant Irani Chadar designed for modesty and comfort. Perfect for daily wear or special occasions, providing full coverage while maintaining grace.",
       price: 45,
-      imageUrl: "./img/irani-chadar.jpg", // Use the correct image URL
+      imageUrl: "./img/irani-chadar.jpg",
     },
     {
       id: 9,
       name: "Alam-e-Abbas",
       description:
         "A beautiful and symbolic Alam-e-Abbas, representing the courage, loyalty, and sacrifice of Hazrat Abbas (AS) during the Battle of Karbala.",
-      price: 120, // You can adjust the price as needed based on its craftsmanship and materials.
-      imageUrl: "./img/alam-e-abbas.jpg", // Replace with the actual image URL of Alam-e-Abbas.
+      price: 120,
+      imageUrl: "./img/alam-e-abbas.jpg",
     },
   ];
 
   // Add product to cart
   const addToCart = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find((item) => item.id === product.id);
+      if (existingProduct) {
+        return prevCart.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
   };
 
-  const handleCheckout = () => {
-    alert("Proceeding to checkout...");
-    // Implement checkout functionality here, e.g., redirect to checkout page
+  // Remove item from cart
+  const removeFromCart = (productId) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  };
+
+  // Get total price of cart items
+  const getTotalPrice = () => {
+    return cart.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0
+    );
+  };
+
+  // Generate WhatsApp message with cart items
+  const generateWhatsAppMessage = () => {
+    let message = "I am interested in buying the following items:\n\n";
+    cart.forEach((item) => {
+      message += `${item.name} - $${item.price} x ${item.quantity}\n`;
+    });
+    message += `\nTotal: $${getTotalPrice()}\n\nPlease proceed with the order.`;
+    return encodeURIComponent(message); // Encode to make it URL-safe
   };
 
   return (
-    <div>
+    <div className="islamic-products">
       <PageHeader
         title="Islamic Jewelry & Products"
         breadcrumbItems={breadcrumbItems}
@@ -114,7 +144,7 @@ const IslamicProducts = () => {
         <div className="row">
           {products.map((product) => (
             <div key={product.id} className="col-md-4 mb-4">
-              <div className="card">
+              <div className="card shadow-sm">
                 <img
                   src={product.imageUrl}
                   alt={product.name}
@@ -127,14 +157,14 @@ const IslamicProducts = () => {
                     <strong>Price: ${product.price}</strong>
                   </p>
                   <button
-                    className="btn btn-primary"
+                    className="btn btn-danger buttonsafar"
                     onClick={() => addToCart(product)}
                   >
                     Add to Cart
                   </button>
                   <a
                     href={`https://wa.me/923238235301?text=I%20am%20interested%20in%20buying%20the%20${product.name}`}
-                    className="btn btn-success ml-2"
+                    className="btn btn-success ml-2 buttonsafar"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -149,9 +179,54 @@ const IslamicProducts = () => {
         {cart.length > 0 && (
           <div className="mt-4">
             <h4>Items in Cart: {cart.length}</h4>
-            <button className="btn btn-success" onClick={handleCheckout}>
-              Proceed to Checkout
-            </button>
+            <div className="cart-list">
+              {cart.map((item) => (
+                <div key={item.id} className="cart-item card mb-3">
+                  <div className="row no-gutters">
+                    <div className="col-md-2">
+                      <img
+                        src={item.imageUrl}
+                        alt={item.name}
+                        className="cart-item-image img-fluid"
+                      />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title">{item.name}</h5>
+                        <p className="card-text">
+                          ${item.price} x {item.quantity}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-md-2 d-flex justify-content-center align-items-center">
+                      <button
+                        className="btn btn-danger btn-sm"
+                        onClick={() => removeFromCart(item.id)}
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="cart-total mt-4">
+              <h4>
+                Total: <span className="text-primary">${getTotalPrice()}</span>
+              </h4>
+            </div>
+
+            <div className="mt-4">
+              <a
+                href={`https://wa.me/923238235301?text=${generateWhatsAppMessage()}`}
+                className="btn btn-success"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Send Cart to WhatsApp
+              </a>
+            </div>
           </div>
         )}
       </div>
