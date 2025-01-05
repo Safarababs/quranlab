@@ -74,37 +74,21 @@ const Header = () => {
               </a>
               <div className="dropdown-menu fade-down m-0">
                 <a href="/religious-1" className="dropdown-item">
-                  Academic Teacher for Schools & Colleges
+                  Expert Teacher's for Religion and Academic
                 </a>
-                <a href="/religious-2" className="dropdown-item">
-                  Mafatih al-Jinan Recording
+                <a href="/recording" className="dropdown-item">
+                  Recording Services
                 </a>
-                <a href="/religious-3" className="dropdown-item">
-                  Majlis-e-Tarheem
-                </a>
-                <a href="/religious-4" className="dropdown-item">
-                  Nahjul Balagha Recording
-                </a>
+
                 <a href="/religious-5" className="dropdown-item">
                   Online Nikkah
                 </a>
-                <a href="/religious-7" className="dropdown-item">
-                  Qaza Namaz (Missed Prayers)
+                <a href="/marhomeen" className="dropdown-item">
+                  Aamal For Marhoomeen
                 </a>
-                <a href="/religious-8" className="dropdown-item">
-                  Qaza Roza (Missed Fasts)
-                </a>
+
                 <a href="/religious-9" className="dropdown-item">
                   Question Answer Section
-                </a>
-                <a href="/religious-10" className="dropdown-item">
-                  Quran Recitation for Deceased Loved Ones
-                </a>
-                <a href="/religious-11" className="dropdown-item">
-                  Quran Recording (Arabic, Urdu, English)
-                </a>
-                <a href="/religious-12" className="dropdown-item">
-                  Sahifa Sajjadia Recording
                 </a>
               </div>
             </div>
@@ -123,7 +107,7 @@ const Header = () => {
                   Educational Fund
                 </a>
                 <a href="/islamic-jewelry" className="dropdown-item">
-                  Islamic Jewelry & Rings
+                  Islamic shop
                 </a>
                 <a href="/podcast" className="dropdown-item">
                   Podcast

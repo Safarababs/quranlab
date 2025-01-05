@@ -17,14 +17,15 @@ const IslamicProducts = () => {
       id: 1,
       name: "Islamic Gold Ring",
       description:
-        "A beautiful gold ring with intricate Islamic calligraphy design.",
+        "A beautifully crafted gold ring featuring intricate Islamic calligraphy, a perfect blend of elegance and faith.",
       price: 100,
       imageUrl: "./img/ring.jpg",
     },
     {
       id: 2,
       name: "Tasbee (Prayer Beads)",
-      description: "A set of 33 prayer beads, perfect for daily recitations.",
+      description:
+        "A set of 33 prayer beads, ideal for daily recitations and remembrance, designed for comfort and spiritual connection.",
       price: 15,
       imageUrl: "./img/tasbee.jpg",
     },
@@ -32,7 +33,7 @@ const IslamicProducts = () => {
       id: 3,
       name: "Sajda Gah (Prayer Mat)",
       description:
-        "A soft, comfortable prayer mat to enhance your prayer experience.",
+        "A soft, comfortable prayer mat that enhances your prayer experience, providing comfort and focus during Salah.",
       price: 25,
       imageUrl: "./img/sajdagah.jpg",
     },
@@ -40,7 +41,7 @@ const IslamicProducts = () => {
       id: 4,
       name: "Jai Namaz (Prayer Rug)",
       description:
-        "Premium quality prayer rug for daily use, perfect for offering Salah.",
+        "Premium quality prayer rug, designed for daily use to offer Salah with ease and comfort.",
       price: 40,
       imageUrl: "./img/jainamaz.jpg",
     },
@@ -48,9 +49,41 @@ const IslamicProducts = () => {
       id: 5,
       name: "Healing Stones (Aqeeq)",
       description:
-        "A set of Aqeeq stones, known for their healing properties and spiritual benefits.",
+        "A set of Aqeeq stones, known for their healing properties and spiritual benefits, promoting well-being and tranquility.",
       price: 30,
       imageUrl: "./img/stone.webp",
+    },
+    {
+      id: 6,
+      name: "Hirz-e-Jawad",
+      description:
+        "Hirz-e-Jawad is a powerful protective amulet, believed to safeguard the wearer from harm, bring blessings, and grant spiritual strength.",
+      price: 50,
+      imageUrl: "./img/hirz.jpg",
+    },
+    {
+      id: 7,
+      name: "Aehram (Pilgrimage Garment)",
+      description:
+        "A lightweight, comfortable Aehram set designed for pilgrims, ensuring comfort and modesty during Hajj or Umrah.",
+      price: 75,
+      imageUrl: "./img/aehram.jpg", // Use the correct image URL
+    },
+    {
+      id: 8,
+      name: "Irani Chadar",
+      description:
+        "A traditional, elegant Irani Chadar designed for modesty and comfort. Perfect for daily wear or special occasions, providing full coverage while maintaining grace.",
+      price: 45,
+      imageUrl: "./img/irani-chadar.jpg", // Use the correct image URL
+    },
+    {
+      id: 9,
+      name: "Alam-e-Abbas",
+      description:
+        "A beautiful and symbolic Alam-e-Abbas, representing the courage, loyalty, and sacrifice of Hazrat Abbas (AS) during the Battle of Karbala.",
+      price: 120, // You can adjust the price as needed based on its craftsmanship and materials.
+      imageUrl: "./img/alam-e-abbas.jpg", // Replace with the actual image URL of Alam-e-Abbas.
     },
   ];
 
