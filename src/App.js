@@ -39,6 +39,8 @@ import TermsAndConditions from "./components/Pages/Terms/TermsAndConditions";
 import FaqAndHelp from "./components/Pages/Faq and Help/FaqAndHelp";
 import RecordingService from "./components/Pages/Religious Services/RecordingServices";
 import AamalForMarhoomeen from "./components/Pages/Religious Services/Marhomeen";
+import QuranVerse1 from "./components/Pages/Quran APi's/QuranVerse1";
+import QuranWithTajweed from "./components/Pages/Quran APi's/QuranWithTajweed";
 
 const App = () => {
   return (
@@ -63,17 +65,20 @@ const App = () => {
         <Route path="/religious-1" element={<AcademicTeacher />} />
         <Route path="/religious-3" element={<MajlisETarheem />} />
         <Route path="/religious-5" element={<OnlineNikkah />} />
-
         <Route path="/religious-9" element={<QuestionAnswer />} />
-
         <Route path="/recording" element={<RecordingService />} />
         <Route path="/marhomeen" element={<AamalForMarhoomeen />} />
-
         {/* Religious section end */}
         <Route path="/educational-fund" element={<EducationalFund />} />
         <Route path="/islamic-jewelry" element={<IslamicProducts />} />
         <Route path="/podcast" element={<PodcastPage />} />
         <Route path="/qa" element={<QuestionAnswerPage />} />
+        <Route path="/read-quran" element={<QuranVerse1 />} />
+        <Route
+          path="/read-quran-tajweed"
+          element={<QuranWithTajweed surah={2} ayah={262} />}
+        />
+
         {/* privacy policy */}
         <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsAndConditions />} />

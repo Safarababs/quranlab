@@ -230,9 +230,8 @@ const IslamicProducts = () => {
           </div>
         )}
       </div>
-
-      <PopularCourses />
       <Contact />
+      <PopularCourses />
     </div>
   );
 };

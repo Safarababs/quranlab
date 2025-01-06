@@ -113,7 +113,7 @@ const PopularCourses = () => {
                       Read More
                     </a>
                     <a
-                      href={`/join-course/${course.id}`} // Dynamic course join link
+                      href={"/contact"} // Dynamic course join link
                       className="flex-shrink-0 btn btn-sm btn-primary px-3"
                       style={{ borderRadius: "0 30px 30px 0" }}
                     >

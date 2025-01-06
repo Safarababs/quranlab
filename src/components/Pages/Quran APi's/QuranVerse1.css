@@ -1,0 +1,84 @@
+/* QuranVerse.css */
+
+.quran-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.surah-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.surah-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.surah-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.surah-list li {
+  margin: 10px 0;
+}
+
+.surah-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.surah-btn:hover {
+  background-color: #45a049;
+}
+
+.surah-content {
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.surah-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ayahs {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ayah {
+  margin-bottom: 15px;
+}
+
+.ayah-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: right;
+  font-family: "Noto Nastaliq Urdu", sans-serif;
+  direction: rtl;
+  padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+}

@@ -34,7 +34,7 @@ const Home = () => {
                   Explore Courses
                 </a>
                 <a
-                  href="/join"
+                  href="/contact"
                   className="btn btn-light py-md-3 px-md-5 animated slideInRight"
                 >
                   Start Learning

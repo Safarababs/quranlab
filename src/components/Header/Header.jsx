@@ -125,6 +125,25 @@ const Header = () => {
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
+                eLibrary
+              </a>
+              <div className="dropdown-menu fade-down m-0">
+                <a href="/read-quran" className="dropdown-item">
+                  Read Quran Online
+                </a>
+                <a href="/read-quran-tajweed" className="dropdown-item">
+                  read-quran-tajweed
+                </a>
+              </div>
+            </div>
+
+            {/* Dropdown for Team & Miscellaneous */}
+            <div className="nav-item dropdown">
+              <a
+                href="/"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
                 More
               </a>
               <div className="dropdown-menu fade-down m-0">
