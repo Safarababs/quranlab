@@ -1,0 +1,133 @@
+/* General Container Styles */
+.quran-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Style */
+.quran-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Dropdown Section */
+.selection-container {
+  margin-bottom: 30px;
+}
+
+.dropdown-group {
+  margin: 15px 0;
+}
+
+.react-select__control {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.react-select__control:hover {
+  border-color: #3498db;
+}
+
+/* View Toggle Button */
+.view-toggle {
+  margin-top: 25px;
+}
+
+.toggle-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Content Section */
+.content {
+  margin-top: 40px;
+}
+
+.surah-name {
+  font-size: 2rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.ayahs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ayah {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.ayah:hover {
+  background-color: #f1f1f1;
+}
+
+.ayah-text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  text-align: right;
+  font-family: "Noto Nastaliq Urdu", sans-serif;
+  direction: rtl;
+  color: #2c3e50;
+}
+
+/* Loading State */
+.loading-text {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-top: 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .quran-container {
+    padding: 15px;
+  }
+
+  .quran-title {
+    font-size: 2rem;
+  }
+
+  .react-select__control {
+    width: 100%;
+  }
+
+  .ayah-text {
+    font-size: 1.2rem;
+  }
+
+  .toggle-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
