@@ -28,14 +28,17 @@ const Testimonial = () => {
         <Slider {...settings}>
           {/* Testimonial 1 */}
           <div className="testimonial-item text-center">
-            <img
-              className="border rounded-circle p-2 mx-auto mb-3"
-              src="img/testimonial-2.jpg"
-              alt="Client"
-              style={{ width: "80px", height: "80px" }}
-            />
+            <div
+              className="testimonial-icon mb-3"
+              style={{
+                fontSize: "50px",
+                color: "#00796B", // Use a color that matches the theme
+              }}
+            >
+              <i className="fas fa-quote-left"></i>
+            </div>
             <h5 className="mb-0">Student Name</h5>
-            <p>Quran Teacher</p>
+            <p className="text-muted">Quran Teacher</p>
             <div className="testimonial-text bg-light text-center p-4">
               <p className="mb-0">
                 "The online Quran teaching with Tajweed, translation, and
@@ -47,14 +50,17 @@ const Testimonial = () => {
           </div>
           {/* Testimonial 2 */}
           <div className="testimonial-item text-center">
-            <img
-              className="border rounded-circle p-2 mx-auto mb-3"
-              src="img/testimonial-3.jpg"
-              alt="Client"
-              style={{ width: "80px", height: "80px" }}
-            />
+            <div
+              className="testimonial-icon mb-3"
+              style={{
+                fontSize: "50px",
+                color: "#3F51B5", // Another color to match the variety
+              }}
+            >
+              <i className="fas fa-quote-left"></i>
+            </div>
             <h5 className="mb-0">Student Name</h5>
-            <p>Shariah Scholar</p>
+            <p className="text-muted">Shariah Scholar</p>
             <div className="testimonial-text bg-light text-center p-4">
               <p className="mb-0">
                 "I participated in the Fasting and Prayers program for my late
@@ -66,14 +72,17 @@ const Testimonial = () => {
           </div>
           {/* Testimonial 3 */}
           <div className="testimonial-item text-center">
-            <img
-              className="border rounded-circle p-2 mx-auto mb-3"
-              src="img/testimonial-3.jpg"
-              alt="Client"
-              style={{ width: "80px", height: "80px" }}
-            />
+            <div
+              className="testimonial-icon mb-3"
+              style={{
+                fontSize: "50px",
+                color: "#FF5722", // Different color for visual variety
+              }}
+            >
+              <i className="fas fa-quote-left"></i>
+            </div>
             <h5 className="mb-0">Student Name</h5>
-            <p>Student of Quran</p>
+            <p className="text-muted">Student of Quran</p>
             <div className="testimonial-text bg-light text-center p-4">
               <p className="mb-0">
                 "The Quran studio is an amazing initiative. The way Quran
@@ -85,14 +94,17 @@ const Testimonial = () => {
           </div>
           {/* Testimonial 4 */}
           <div className="testimonial-item text-center">
-            <img
-              className="border rounded-circle p-2 mx-auto mb-3"
-              src="img/testimonial-3.jpg"
-              alt="Client"
-              style={{ width: "80px", height: "80px" }}
-            />
+            <div
+              className="testimonial-icon mb-3"
+              style={{
+                fontSize: "50px",
+                color: "#2196F3", // Another matching color
+              }}
+            >
+              <i className="fas fa-quote-left"></i>
+            </div>
             <h5 className="mb-0">Student Name</h5>
-            <p>Islamic Scholar</p>
+            <p className="text-muted">Islamic Scholar</p>
             <div className="testimonial-text bg-light text-center p-4">
               <p className="mb-0">
                 "I am grateful for the assistance in fulfilling religious duties
