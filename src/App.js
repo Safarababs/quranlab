@@ -40,6 +40,7 @@ import FaqAndHelp from "./components/Pages/Faq and Help/FaqAndHelp";
 import RecordingService from "./components/Pages/Religious Services/RecordingServices";
 import AamalForMarhoomeen from "./components/Pages/Religious Services/Marhomeen";
 import QuranVerse from "./components/Pages/Quran APi's/QuranVerse1";
+import BookViewer from "./components/Pages/Books Library/books";
 
 const App = () => {
   return (
@@ -73,6 +74,7 @@ const App = () => {
         <Route path="/podcast" element={<PodcastPage />} />
         <Route path="/qa" element={<QuestionAnswerPage />} />
         <Route path="/read-quran" element={<QuranVerse />} />
+        <Route path="/books" element={<BookViewer />} />
 
         {/* privacy policy */}
         <Route path="/policy" element={<PrivacyPolicy />} />

@@ -131,6 +131,9 @@ const Header = () => {
                 <a href="/read-quran" className="dropdown-item">
                   Read Quran Online
                 </a>
+                <a href="/books" className="dropdown-item">
+                  books
+                </a>
               </div>
             </div>
 
