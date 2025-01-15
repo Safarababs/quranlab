@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaFacebookF,
-  FaYoutube,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,58 +10,54 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row g-5">
           {/* Quick Links */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6 col-12">
             <h4 className="text-white mb-3">Quick Links</h4>
-            <a className="btn btn-link" href="/about">
+            <a className="btn btn-link text-light" href="/about">
               About Us
             </a>
-            <a className="btn btn-link" href="/contact">
+            <a className="btn btn-link text-light" href="/contact">
               Contact Us
             </a>
-            <a className="btn btn-link" href="/policy">
+            <a className="btn btn-link text-light" href="/policy">
               Privacy Policy
             </a>
-            <a className="btn btn-link" href="/terms">
+            <a className="btn btn-link text-light" href="/terms">
               Terms & Conditions
             </a>
-            <a className="btn btn-link" href="/faq">
+            <a className="btn btn-link text-light" href="/faq">
               FAQs & Help
             </a>
           </div>
 
           {/* Contact Information */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6 col-12">
             <h4 className="text-white mb-3">Contact</h4>
             <p className="mb-2">
-              <FaMapMarkerAlt className="me-3" />
-              123 Street, New York, USA
-            </p>
-            <p className="mb-2">
               <FaPhoneAlt className="me-3" />
-              +012 345 67890
+              +923002425568
             </p>
             <p className="mb-2">
               <FaEnvelope className="me-3" />
-              info@example.com
+              Fidaalmaas@gmail.com
             </p>
             <div className="d-flex pt-2">
-              <a className="btn btn-outline-light btn-social" href="/">
-                <FaTwitter />
-              </a>
               <a
-                className="btn btn-outline-light btn-social"
+                className="btn btn-outline-light btn-social me-2"
                 href="http://www.youtube.com/@almasonlinequran"
               >
                 <FaFacebookF />
               </a>
-              <a className="btn btn-outline-light btn-social" href="/">
+              <a
+                className="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/profile.php?id=100066718635513"
+              >
                 <FaYoutube />
               </a>
             </div>
           </div>
 
           {/* Gallery Section */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6 col-12">
             <h4 className="text-white mb-3">Gallery</h4>
             <div className="row g-2 pt-2">
               <div className="col-4">
@@ -115,58 +104,29 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* Newsletter Section */}
-          <div className="col-lg-3 col-md-6">
-            <h4 className="text-white mb-3">Newsletter</h4>
-            <p>Stay updated with the latest news and offers.</p>
-            <div
-              className="position-relative mx-auto"
-              style={{ maxWidth: "400px" }}
-            >
-              <input
-                className="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="email"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                Sign Up
-              </button>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Footer Copyright and Footer Menu */}
-      <div className="container">
-        <div className="copyright">
-          <div className="row">
-            <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy;{" "}
+      {/* Copyright Section */}
+      <div className="container-fluid p-0 bg-dark text-light">
+        <div className="row justify-content-center w-100">
+          <div className="col-md-8 text-center text-md-start mb-3 mb-md-0">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-start">
               <a
-                className="border-bottom"
+                className="border-bottom me-2"
                 href="https://www.quranlabonline.com"
+                style={{ textDecoration: "none" }}
               >
                 Quran Lab Online
               </a>
-              , All Rights Reserved.
-              <br />
-              Designed By{" "}
-              <a className="border-bottom" href="https://www.abdullah.com">
-                Abdullah
-              </a>
+              <p className="mb-0">
+                &copy;{" "}
+                {`2025 - ${new Date().getFullYear()} All Rights Reserved.`}
+              </p>
             </div>
-            <div className="col-md-6 text-center text-md-end">
-              <div className="footer-menu">
-                <a href="/">Home</a>
-                <a href="/">Cookies</a>
-                <a href="/">Help</a>
-                <a href="/">FAQs</a>
-              </div>
-            </div>
+            <br />
+            <span>Designed By </span>
+            <a href="https://safarababs.github.io/safarweb/">Safar Abbas</a>
           </div>
         </div>
       </div>

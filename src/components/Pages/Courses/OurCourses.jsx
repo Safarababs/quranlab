@@ -13,10 +13,7 @@ const OurCourses = () => {
   ];
   return (
     <div>
-      <PageHeader
-        title="Quran Reading (Nazra Quran)"
-        breadcrumbItems={breadcrumbItems}
-      />
+      <PageHeader title="Our Courses" breadcrumbItems={breadcrumbItems} />
       <div className="container py-5">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">

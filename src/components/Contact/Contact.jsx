@@ -83,18 +83,7 @@ const Contact = () => {
               and paste the files, add a little code and you're done.{" "}
               <a href="https://htmlcodex.com/contact-form">Download Now</a>.
             </p>
-            <div className="d-flex align-items-center mb-3">
-              <div
-                className="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                style={{ width: "50px", height: "50px" }}
-              >
-                <i className="fa fa-map-marker-alt text-white"></i>
-              </div>
-              <div className="ms-3">
-                <h5 className="text-primary">Office</h5>
-                <p className="mb-0">123 Street, New York, USA</p>
-              </div>
-            </div>
+
             <div className="d-flex align-items-center mb-3">
               <div
                 className="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
@@ -104,7 +93,7 @@ const Contact = () => {
               </div>
               <div className="ms-3">
                 <h5 className="text-primary">Mobile</h5>
-                <p className="mb-0">+012 345 67890</p>
+                <p className="mb-0">+923002425568</p>
               </div>
             </div>
             <div className="d-flex align-items-center">
@@ -116,7 +105,7 @@ const Contact = () => {
               </div>
               <div className="ms-3">
                 <h5 className="text-primary">Email</h5>
-                <p className="mb-0">info@example.com</p>
+                <p className="mb-0">Fidaalmaas@gmail.com</p>
               </div>
             </div>
           </div>

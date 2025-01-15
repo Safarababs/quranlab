@@ -28,7 +28,7 @@ import QuestionAnswer from "./components/Pages/Religious Services/QuestionAnswer
 
 // projects section
 import EducationalFund from "./components/Pages/Projects/EducationalFund";
-import IslamicProducts from "./components/Pages/Projects/IslamicProducts";
+import IslamicProducts from "./components/Pages/Islamic Shop/IslamicProducts";
 import PodcastPage from "./components/Pages/Projects/PodcastPage";
 import QuestionAnswerPage from "./components/Pages/Projects/QuestionAnswerPage";
 // not found
@@ -40,7 +40,16 @@ import FaqAndHelp from "./components/Pages/Faq and Help/FaqAndHelp";
 import RecordingService from "./components/Pages/Religious Services/RecordingServices";
 import AamalForMarhoomeen from "./components/Pages/Religious Services/Marhomeen";
 import QuranVerse from "./components/Pages/Quran APi's/QuranVerse1";
-import BookViewer from "./components/Pages/Books Library/books";
+import BookViewer from "./components/Pages/Books Library/book";
+import Ring from "./components/Pages/Islamic Shop/ring";
+import Tasbee from "./components/Pages/Islamic Shop/Tasbee";
+import SajdaGah from "./components/Pages/Islamic Shop/SajdaGah";
+import JaiNamaz from "./components/Pages/Islamic Shop/jainamaz";
+import HealingStones from "./components/Pages/Islamic Shop/stone";
+import HirzEJawad from "./components/Pages/Islamic Shop/hirz";
+import Aehram from "./components/Pages/Islamic Shop/Aehram";
+import IraniChadar from "./components/Pages/Islamic Shop/iranichadar";
+import AlamAbbas from "./components/Pages/Islamic Shop/alam";
 
 const App = () => {
   return (
@@ -70,12 +79,24 @@ const App = () => {
         <Route path="/marhomeen" element={<AamalForMarhoomeen />} />
         {/* Religious section end */}
         <Route path="/educational-fund" element={<EducationalFund />} />
-        <Route path="/islamic-jewelry" element={<IslamicProducts />} />
+
         <Route path="/podcast" element={<PodcastPage />} />
         <Route path="/qa" element={<QuestionAnswerPage />} />
         <Route path="/read-quran" element={<QuranVerse />} />
         <Route path="/books" element={<BookViewer />} />
 
+        {/* islamic shop */}
+        <Route path="/islamic-jewelry" element={<IslamicProducts />} />
+        <Route path="/ring" element={<Ring />} />
+        <Route path="/tasbee" element={<Tasbee />} />
+        <Route path="/sajdagah" element={<SajdaGah />} />
+        <Route path="/janamaz" element={<JaiNamaz />} />
+        <Route path="/stones" element={<HealingStones />} />
+        <Route path="/hirz" element={<HirzEJawad />} />
+        <Route path="/aehram" element={<Aehram />} />
+        <Route path="/chadar" element={<IraniChadar />} />
+        <Route path="/alam" element={<AlamAbbas />} />
+        {/* islamic shop end */}
         {/* privacy policy */}
         <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsAndConditions />} />

@@ -6,7 +6,7 @@ import PopularCourses from "./LandingPage/Popular Courses/PopularCourses";
 import Instructors from "./LandingPage/Instructors/Instructorrs";
 import Testimonial from "./LandingPage/Testimonial/Testomial";
 import About from "./LandingPage/About/About";
-import IslamicProducts from "../Projects/IslamicProducts";
+import IslamicProducts from "../Islamic Shop/IslamicProducts";
 
 const LandingPage = () => {
   return (
