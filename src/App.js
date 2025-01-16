@@ -50,6 +50,11 @@ import HirzEJawad from "./components/Pages/Islamic Shop/hirz";
 import Aehram from "./components/Pages/Islamic Shop/Aehram";
 import IraniChadar from "./components/Pages/Islamic Shop/iranichadar";
 import AlamAbbas from "./components/Pages/Islamic Shop/alam";
+import Blog from "./components/Blogs/Blog";
+import Login from "./components/Login";
+import Write from "./components/Blogs/Write";
+import Instructors from "./components/Pages/Home Page/LandingPage/Instructors/Instructorrs";
+import Testimonial from "./components/Pages/Home Page/LandingPage/Testimonial/Testomial";
 
 const App = () => {
   return (
@@ -79,11 +84,12 @@ const App = () => {
         <Route path="/marhomeen" element={<AamalForMarhoomeen />} />
         {/* Religious section end */}
         <Route path="/educational-fund" element={<EducationalFund />} />
-
         <Route path="/podcast" element={<PodcastPage />} />
         <Route path="/qa" element={<QuestionAnswerPage />} />
         <Route path="/read-quran" element={<QuranVerse />} />
         <Route path="/books" element={<BookViewer />} />
+        <Route path="/Instructors" element={<Instructors />} />
+        <Route path="/testimonials" element={<Testimonial />} />
 
         {/* islamic shop */}
         <Route path="/islamic-jewelry" element={<IslamicProducts />} />
@@ -96,6 +102,9 @@ const App = () => {
         <Route path="/aehram" element={<Aehram />} />
         <Route path="/chadar" element={<IraniChadar />} />
         <Route path="/alam" element={<AlamAbbas />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/write" element={<Write />} />
         {/* islamic shop end */}
         {/* privacy policy */}
         <Route path="/policy" element={<PrivacyPolicy />} />

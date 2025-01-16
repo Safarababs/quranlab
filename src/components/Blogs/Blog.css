@@ -1,0 +1,330 @@
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Breadcrumb Section */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Blog Card */
+.blog-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
+.card-img-top {
+  border-bottom: 2px solid #ddd;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  background: none;
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.blog-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.blog-details .category,
+.blog-details .tags,
+.blog-details .date {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  color: #777;
+}
+
+.blog-details .category,
+.blog-details .tags {
+  flex-basis: 33%;
+}
+
+.blog-details .date {
+  flex-basis: 33%;
+  text-align: right;
+}
+
+.blog-details svg {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.blog-footer .status {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.status.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.status.expired {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Hover Effects for Cards */
+.card:hover .card-body {
+  transform: scale(1.05);
+  background-color: #f9f9f9;
+}
+
+/* Styling for loading message */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .blog-card {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
+/* Blog item styling */
+.blog-item {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: translateY(-10px);
+}
+
+.blog-item img {
+  border-bottom: 2px solid #ddd;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.blog-item:hover img {
+  transform: scale(1.05);
+}
+
+.blog-details {
+  text-align: left;
+}
+
+.blog-status {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 2px solid #ddd;
+}
+
+/* Buttons for Read More and Join Now */
+.blog-item .btn {
+  font-size: 0.9rem;
+  border-radius: 30px;
+  padding: 8px 16px;
+  width: 90%;
+  height: auto;
+  margin: 5px;
+}
+
+.blog-item .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.blog-item .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* For Status */
+.blog-status p {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Active/Expired status styles */
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+/* Hover effects */
+.blog-item:hover .blog-status {
+  background-color: #e9ecef;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .blog-item {
+    margin-bottom: 30px;
+  }
+}
+/* Modal Overlay Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Dark background for overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050000000000000000; /* Ensure it is on top of other content */
+  overflow: auto; /* Allow scrolling for the whole page if modal is large */
+}
+
+/* Modal Content Styling */
+.modal-content {
+  background-color: #ffffff; /* Pure white background */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto; /* Enable scrolling if the content overflows */
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better depth */
+  color: #000000; /* Black text color */
+  z-index: 10000000000;
+}
+
+/* Modal Body Styling */
+.modal-body {
+  padding-top: 20px;
+  font-family: "Arial", sans-serif; /* Make sure it's easy to read */
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #000; /* Ensure text is black */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.8em;
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Modal Content Paragraph */
+.modal-body p {
+  margin-bottom: 15px;
+  text-align: justify; /* Improve text alignment */
+}
+
+/* Scrollable content with some spacing */
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

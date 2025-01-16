@@ -159,11 +159,17 @@ const Header = () => {
                 <a href="/courses" className="dropdown-item">
                   Courses
                 </a>
-                <a href="/our-team" className="dropdown-item">
+                <a href="/blog" className="dropdown-item">
+                  Latest Blog
+                </a>
+                <a href="/Instructors" className="dropdown-item">
                   Our Team
                 </a>
                 <a href="/testimonials" className="dropdown-item">
                   Testimonials
+                </a>
+                <a href="/login" className="dropdown-item">
+                  Login
                 </a>
                 <a href="/404" className="dropdown-item">
                   404 Page
