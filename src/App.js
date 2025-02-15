@@ -56,9 +56,22 @@ import Write from "./components/Blogs/Write";
 import Instructors from "./components/Pages/Home Page/LandingPage/Instructors/Instructorrs";
 import Testimonial from "./components/Pages/Home Page/LandingPage/Testimonial/Testomial";
 
+import { Helmet } from "react-helmet";
+
 const App = () => {
   return (
     <Router>
+      <Helmet>
+        <title>Islamic Services and Courses</title>
+        <meta
+          name="description"
+          content="Online Islamic services and courses including Quran reading, Tajweed, Islamic studies, and more."
+        />
+        <meta
+          name="keywords"
+          content="Islamic services, Quran reading, Tajweed, Islamic studies, online courses, Aqiqah, Istikhara, Online Nikkah, Islamic products, religious services, Islamic ethics, educational fund, podcasts, books, Islamic jewelry, healing stones"
+        />
+      </Helmet>
       <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />

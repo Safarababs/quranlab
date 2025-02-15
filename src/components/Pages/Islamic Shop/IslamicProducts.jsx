@@ -34,7 +34,7 @@ const IslamicProducts = () => {
     },
     {
       id: 3,
-      name: "Sajda Gah (Prayer Mat)",
+      name: "Turbat (Prayer Mat)",
       description:
         "A soft, comfortable prayer mat that enhances your prayer experience, providing comfort and focus during Salah.",
       price: 25,
@@ -79,16 +79,16 @@ const IslamicProducts = () => {
     },
     {
       id: 8,
-      name: "Irani Chadar",
+      name: "Namaz Chadar",
       description:
-        "A traditional, elegant Irani Chadar designed for modesty and comfort. Perfect for daily wear or special occasions, providing full coverage while maintaining grace.",
+        "A traditional, elegant Namaz Chadar designed for modesty and comfort. Perfect for daily wear or special occasions, providing full coverage while maintaining grace.",
       price: 45,
       imageUrl: "./img/irani-chadar.jpg",
       pageurl: "/chadar",
     },
     {
       id: 9,
-      name: "Alam-e-Abbas",
+      name: "Islamic Banners",
       description:
         "A beautiful and symbolic Alam-e-Abbas, representing the courage, loyalty, and sacrifice of Hazrat Abbas (AS) during the Battle of Karbala.",
       price: 120,

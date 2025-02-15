@@ -44,6 +44,28 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .position-absolute {
+            position: relative !important;
+            height: auto !important;
+            background: rgba(24, 29, 56, 0.9) !important;
+            text-align: center !important;
+          }
+          .container {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+          }
+          .display-3 {
+            font-size: 2rem !important;
+          }
+          .btn {
+            width: 100% !important;
+            margin-bottom: 1rem !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };
