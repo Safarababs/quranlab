@@ -79,14 +79,19 @@ const Header = () => {
                 <a href="/recording" className="dropdown-item">
                   Recording Services
                 </a>
-
                 <a href="/religious-5" className="dropdown-item">
                   Online Nikkah
                 </a>
+                <a href="/istikhara" className="dropdown-item">
+                  Istikhara Services
+                </a>
+                <a href="/akeeka" className="dropdown-item">
+                  Aqiqah Services
+                </a>
+
                 <a href="/marhomeen" className="dropdown-item">
                   Aamal For Marhoomeen
                 </a>
-
                 <a href="/religious-9" className="dropdown-item">
                   Question Answer Section
                 </a>

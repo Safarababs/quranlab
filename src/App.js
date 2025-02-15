@@ -21,9 +21,9 @@ import Pricing from "./components/Fee Structure/FeeStructure";
 import AcademicTeacher from "./components/Pages/Religious Services/AcademicTeacher";
 
 import MajlisETarheem from "./components/Pages/Religious Services/MajlisETarheem";
-
+import Akeeka from "./components/Pages/Religious Services/Akeeka";
 import OnlineNikkah from "./components/Pages/Religious Services/OnlineNikkah";
-
+import Istikhara from "./components/Pages/Religious Services/Istikhara";
 import QuestionAnswer from "./components/Pages/Religious Services/QuestionAnswer";
 
 // projects section
@@ -82,6 +82,7 @@ const App = () => {
         <Route path="/religious-9" element={<QuestionAnswer />} />
         <Route path="/recording" element={<RecordingService />} />
         <Route path="/marhomeen" element={<AamalForMarhoomeen />} />
+        <Route path="/istikhara" element={<Istikhara />} />
         {/* Religious section end */}
         <Route path="/educational-fund" element={<EducationalFund />} />
         <Route path="/podcast" element={<PodcastPage />} />
@@ -90,6 +91,7 @@ const App = () => {
         <Route path="/books" element={<BookViewer />} />
         <Route path="/Instructors" element={<Instructors />} />
         <Route path="/testimonials" element={<Testimonial />} />
+        <Route path="/akeeka" element={<Akeeka />} />
 
         {/* islamic shop */}
         <Route path="/islamic-jewelry" element={<IslamicProducts />} />

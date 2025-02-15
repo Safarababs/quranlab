@@ -1,6 +1,28 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  function handleClick(event) {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ueoym1l",
+        "template_uidjdus",
+        event.target,
+        "79pxgO9DwkqVi5_BE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    event.target.reset();
+  }
+
   return (
     <div className="container-xxl py-5">
       <div className="container">
@@ -16,15 +38,17 @@ const Contact = () => {
             className="col-lg-6 col-md-12 wow fadeInUp"
             data-wow-delay="0.5s"
           >
-            <form>
+            <form onSubmit={handleClick}>
               <div className="row g-3">
                 <div className="col-md-6">
                   <div className="form-floating">
                     <input
                       type="text"
+                      name="name"
+                      placeholder="name"
                       className="form-control"
                       id="name"
-                      placeholder="Your Name"
+                      required
                     />
                     <label htmlFor="name">Your Name</label>
                   </div>
@@ -33,9 +57,11 @@ const Contact = () => {
                   <div className="form-floating">
                     <input
                       type="email"
+                      name="email"
+                      placeholder="email"
                       className="form-control"
                       id="email"
-                      placeholder="Your Email"
+                      required
                     />
                     <label htmlFor="email">Your Email</label>
                   </div>
@@ -44,11 +70,26 @@ const Contact = () => {
                   <div className="form-floating">
                     <input
                       type="text"
+                      name="subject"
                       className="form-control"
                       id="subject"
                       placeholder="Subject"
+                      required
                     />
                     <label htmlFor="subject">Subject</label>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      name="tel"
+                      placeholder="+123-123456"
+                      className="form-control"
+                      id="Tel"
+                      required
+                    />
+                    <label htmlFor="Tel">Telephone</label>
                   </div>
                 </div>
                 <div className="col-12">
@@ -58,6 +99,8 @@ const Contact = () => {
                       placeholder="Leave a message here"
                       id="message"
                       style={{ height: "150px" }}
+                      name="message"
+                      required
                     ></textarea>
                     <label htmlFor="message">Message</label>
                   </div>
@@ -77,11 +120,11 @@ const Contact = () => {
             data-wow-delay="0.1s"
           >
             <h5>Get In Touch</h5>
-            <p className="mb-4">
-              The contact form is currently inactive. Get a functional and
-              working contact form with Ajax & PHP in a few minutes. Just copy
-              and paste the files, add a little code and you're done.{" "}
-              <a href="https://htmlcodex.com/contact-form">Download Now</a>.
+            <p>
+              We are always here to assist you with any queries or concerns you
+              may have. Please feel free to reach out to us through any of the
+              provided contact methods. Your satisfaction is our priority, and
+              we strive to respond to all inquiries promptly.
             </p>
 
             <div className="d-flex align-items-center mb-3">
