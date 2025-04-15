@@ -23,9 +23,8 @@ const Home = () => {
                   Learn Quran with Tajweed, Tafseer & More
                 </h1>
                 <p className="fs-5 text-white mb-4 pb-2">
-                  Join our comprehensive Quran courses, including Tajweed,
-                  Tafseer, and memorization. Learn at your own pace with expert
-                  teachers.
+                  Your rate, Your time, Your choice. Online Quran classes for
+                  Tajweed, Hifz and Arabic.
                 </p>
                 <a
                   href="/courses"
