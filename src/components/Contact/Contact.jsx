@@ -66,19 +66,7 @@ const Contact = () => {
                     <label htmlFor="email">Your Email</label>
                   </div>
                 </div>
-                <div className="col-12">
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      name="subject"
-                      className="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                      required
-                    />
-                    <label htmlFor="subject">Subject</label>
-                  </div>
-                </div>
+
                 <div className="col-12">
                   <div className="form-floating">
                     <input
@@ -89,7 +77,7 @@ const Contact = () => {
                       id="Tel"
                       required
                     />
-                    <label htmlFor="Tel">Telephone</label>
+                    <label htmlFor="Tel">Whatsapp</label>
                   </div>
                 </div>
                 <div className="col-12">
