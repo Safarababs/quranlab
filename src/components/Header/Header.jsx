@@ -8,9 +8,11 @@ const Header = () => {
           href="/"
           className="navbar-brand d-flex align-items-center px-4 px-lg-5"
         >
-          <h2 className="m-0 text-primary">
-            <i className="fa fa-book me-3"></i> Online Quran Lab
-          </h2>
+          <img
+            src="img/logo.png"
+            alt="Online Quran Lab Logo"
+            className="logo-img"
+          />
         </a>
         <button
           type="button"

@@ -23,36 +23,20 @@ const IslamicProducts = () => {
       imageUrl: "./img/ring.jpg",
       pageurl: "/ring",
     },
-    {
-      id: 2,
-      name: "Tasbee (Prayer Beads)",
-      description:
-        "A set of 33 prayer beads, ideal for daily recitations and remembrance, designed for comfort and spiritual connection.",
-      price: 15,
-      imageUrl: "./img/tasbee.jpg",
-      pageurl: "/tasbee",
-    },
+
     {
       id: 3,
-      name: "Turbat (Prayer Mat)",
+      name: "Namaz Accessories",
       description:
-        "A soft, comfortable prayer mat that enhances your prayer experience, providing comfort and focus during Salah.",
+        "Our store offers a range of Namaz accessories, including Turbah, Tasbeeh, prayer rugs, Islamic rings, and Khake Shifa. Enhance your prayer experience with our high-quality items!",
       price: 25,
-      imageUrl: "./img/sajdagah.jpg",
+      imageUrl: "./img/accessories.jpg",
       pageurl: "/sajdagah",
     },
-    {
-      id: 4,
-      name: "Jai Namaz (Prayer Rug)",
-      description:
-        "Premium quality prayer rug, designed for daily use to offer Salah with ease and comfort.",
-      price: 40,
-      imageUrl: "./img/jainamaz.jpg",
-      pageurl: "/janamaz",
-    },
+
     {
       id: 5,
-      name: "Healing Stones (Aqeeq)",
+      name: "Islamic rings and Healing stones",
       description:
         "A set of Aqeeq stones, known for their healing properties and spiritual benefits, promoting well-being and tranquility.",
       price: 30,

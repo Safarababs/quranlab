@@ -423,3 +423,10 @@
   padding-right: 0;
   border-right: none;
 }
+
+.logo-img {
+  width: 120px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure responsiveness */
+  object-fit: contain; /* Adjust fit */
+}

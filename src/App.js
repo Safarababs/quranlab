@@ -57,6 +57,7 @@ import Instructors from "./components/Pages/Home Page/LandingPage/Instructors/In
 import Testimonial from "./components/Pages/Home Page/LandingPage/Testimonial/Testomial";
 
 import { Helmet } from "react-helmet";
+import WhatsAppPopup from "./components/WhatsappPopup/WhatsappPopup";
 
 const App = () => {
   return (
@@ -128,6 +129,7 @@ const App = () => {
       </Routes>
 
       <Footer />
+      <WhatsAppPopup />
     </Router>
   );
 };
