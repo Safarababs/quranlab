@@ -38,7 +38,7 @@ const Footer = () => {
             </p>
             <p className="mb-2">
               <FaEnvelope className="me-3" />
-              Fidaalmaas@gmail.com
+              info@onlinequranlab.com
             </p>
             <div className="d-flex pt-2">
               <a
